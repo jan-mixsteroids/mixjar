@@ -1,0 +1,17 @@
+{
+  "name": "mixjar",
+  "version": "1.0.0",
+  "description": "Javascript/Typescript library comprising of multiple mixes",
+  "main": "index.js",
+  "author": "Jan Ndungu",
+  "license": "MIT",
+  "dependencies": {
+    "unirest": "^0.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-plugin-snakecasejs": "^2.2.0",
+    "jsdoc": "^3.6.7",
+    "minami": "^1.2.3"
+  }
+}
