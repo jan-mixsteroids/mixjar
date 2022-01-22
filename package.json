@@ -1,11 +1,14 @@
 {
   "name": "mixjar",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "API Wrapper for mixcloud and hearthisat",
   "main": "index.js",
   "author": "Jan Ndungu",
   "license": "MIT",
-  "repository": "https://github.com/jan-mixsteroids/mixjar.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jan-mixsteroids/mixjar.git"
+  },
   "scripts": {
     "prestart": "npm install",
     "start": "nodemon app.js",
