@@ -1,10 +1,17 @@
 {
   "name": "mixjar",
   "version": "1.0.0",
-  "description": "Javascript/Typescript library comprising of multiple mixes",
+  "description": "API Wrapper for mixcloud and hearthisat",
   "main": "index.js",
   "author": "Jan Ndungu",
   "license": "MIT",
+  "repository": "https://github.com/jan-mixsteroids/mixjar.git",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "nodemon app.js",
+    "generate-docs": "jsdoc -r  . -d docs -c jsdoc.conf",
+    "test": "node node_modules/jasmine/bin/jasmine"
+  },
   "dependencies": {
     "unirest": "^0.6.0"
   },
