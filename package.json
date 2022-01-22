@@ -21,6 +21,7 @@
   "devDependencies": {
     "eslint": "^8.7.0",
     "eslint-plugin-snakecasejs": "^2.2.0",
+    "jasmine": "^4.0.2",
     "jsdoc": "^3.6.7",
     "minami": "^1.2.3"
   }
