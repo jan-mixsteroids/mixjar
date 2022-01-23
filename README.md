@@ -43,7 +43,7 @@ For all functions, there are two methods to obtain your result. For instance
 
 ## API
 
-Refer to the [Source code](./lib) for available sources / platforms
+Refer to the [Docs](https://ndungujan23.github.io/mixjar/) for available sources / platforms
 
 > Note: A good number of the API methods have been implemented. More will be added over time
 > as well as more sources. All PRs are welcome 🙂, for any and new methods
