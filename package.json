@@ -1,6 +1,6 @@
 {
   "name": "mixjar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "API Wrapper for mixcloud and hearthisat",
   "main": "index.js",
   "author": "Jan Ndungu",
