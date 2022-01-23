@@ -33,11 +33,11 @@ const hearthisat = new Mixjar.Hearthisat();
 For all functions, there are two methods to obtain your result. For instance
 * Callbacks
     ```js
-    mixcloud.search('ndungujan23').asCallback((err, result) => {})
+    mixcloud.user('ndungujan23').asCallback((err, result) => {})
     ```
 * Promise
     ```js
-    mixcloud.search('ndungujan23').asPromise().then(() => {})
+    mixcloud.user('ndungujan23').asPromise().then(() => {})
     ```
 
 
