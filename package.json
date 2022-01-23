@@ -9,6 +9,12 @@
     "type": "git",
     "url": "https://github.com/jan-mixsteroids/mixjar.git"
   },
+  "keywords": [
+    "mixcloud",
+    "hearthisat",
+    "mixes",
+    "api"
+  ],
   "scripts": {
     "prestart": "npm install",
     "start": "nodemon app.js",
