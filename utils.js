@@ -39,6 +39,23 @@ const request = (method, uri, headers = null, body = null) => new Promise((resol
 
 module.exports = {
 
+	configs: () => ({
+		api: {
+			mixcloud: 'https://api.mixcloud.com',
+			hearthisat: 'https://api-v2.hearthis.at',
+		},
+		url: {
+			mixcloud: 'https://www.mixcloud.com',
+			hearthisat: 'https://hearthis.at',
+		},
+		params: {
+			mixcloud: {
+				metadata: true,
+				callback: '',
+			}
+		}
+	}),
+
 	/**
 	 * Get actual metadata value
 	 * @param {Boolean} metadata
@@ -99,6 +116,32 @@ module.exports = {
 			}
 		});
 		return obj;
-	}
+	},
 
+	/**
+	 * Function builder to return promise, callback or observable
+	 * @param {(Promise<Any>)} fn
+	 * @returns {{asPromise(): Promise<Any>, asCallback(*): void}}
+	 */
+	FunctionBuilder(fn) {
+		return {
+
+			/**
+			 * Return result as promise
+			 * @returns {Promise<Any>}
+			 */
+			asPromise() {
+				return fn;
+			},
+
+			/**
+			 * Function builder to return promise, callback or observable
+			 * @param {Function} callback
+			 * @returns {void}
+			 */
+			asCallback(callback) {
+				fn.then((result) => callback(null, result), (err) => callback(err));
+			},
+		};
+	}
 };
